@@ -1,0 +1,9 @@
+export default function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
+
+    return (
+
+        <svg viewBox="0 0 16 30" {...props}>
+            <path d="M12.765 4.98004H15.585V0.210045C14.2196 0.0680654 12.8477 -0.00203142 11.475 4.47961e-05C7.39499 4.47961e-05 4.60499 2.49004 4.60499 7.05003V10.98H0V16.32H4.60499V30H10.125V16.32H14.715L15.405 10.98H10.125V7.57503C10.125 6.00004 10.545 4.98004 12.765 4.98004Z" fill="#CEDEFF"/>
+        </svg>
+    );
+}

@@ -1,0 +1,109 @@
+/* #region Fonts */
+
+@font-face {
+  font-family: Orbitron;
+  src: url(assets/fonts/Orbitron/Orbitron-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Orbitron;
+  src: url(assets/fonts/Orbitron/Orbitron-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Orbitron;
+  src: url(assets/fonts/Orbitron/Orbitron-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Orbitron;
+  src: url(assets/fonts/Orbitron/Orbitron-Bold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(assets/fonts/Inter_24pt-Regular.ttf);
+  font-weight: 400;
+}
+
+/* #endregion Fonts */
+
+:root {
+  --teste-de-cores: #56009300;
+
+  /* Colors */
+  --bg-1: #06090e;
+  --bg-projects-section: oklch(10.69% 0.01072 266.52);
+  --accent-a: #4a06d2;
+  --accent-b: #00b2d2;
+  --text-primary-white: #eee;
+  --text-secondary-white: #ccc;
+  --text-tertiary-white: #bbb;
+
+  /* Values For GSAP Animations */
+  --angle-left: 359deg;
+  --angle-right: 1deg;
+  --opacity-level: 0;
+  /* --card-width: 320px;
+  --width-line: calc(50% - var(--card-width)); */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* #region Keyframes */
+
+@keyframes infiniteScrollLine {
+  to {
+    translate: -100%;
+  }
+}
+
+@keyframes bg-flow {
+  0% {
+    background-position:
+      15% 30%,
+      85% 40%,
+      50% 75%;
+  }
+
+  50% {
+    background-position:
+      30% 45%,
+      65% 30%,
+      55% 60%;
+  }
+
+  100% {
+    background-position:
+      15% 30%,
+      85% 40%,
+      50% 75%;
+  }
+}
+
+@keyframes bg-light-sweep {
+  0% {
+    transform: translateX(-60%);
+  }
+
+  100% {
+    transform: translateX(60%);
+  }
+}
+
+/* #endregion Keyframes */
+
+.bg-flow {
+  animation: bg-flow 22s ease-in-out infinite;
+}
+
+.bg-light-sweep {
+  animation: bg-light-sweep 30s linear infinite alternate;
+}
